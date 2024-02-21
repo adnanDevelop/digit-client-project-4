@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* TEXT AND BG COLORS */
+  --white: #fff;
+  --light-white: #c4cfde;
+  --black: #000;
+  --dark-black: #0b0b13;
+  --green: rgb(93, 207, 0);
+  --blue-shadow: rgba(0, 193, 231, 0.631372549);
+  --dark-blue: #100028;
+  --bg-color: #09101a;
+
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Poppins", sans-serif;
+  --font-heading : "Playfair Display", serif;
+  /* TRANSITION */
+  --transition: all 0.4s ease-in;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  scroll-behavior: smooth;
+  font-family: var(--montserrat-font);
+}
+
+/* CUSTOM SCROLL BAR SECTION */
+body::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  border: 0.2rem solid var(--white);
+  background: var(--green);
+  border-radius: 1rem;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--bg-color);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+
+h1 {
+  font-size: 4rem !important;
+  font-weight: 700 !important;
+  text-transform: capitalize;
+  font-family: var(--font-heading);
+}
+
+h2 {
+  font-size: 3rem !important;
+  font-weight: var(--fw-bolder) !important;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-size: 3rem !important;
+  font-weight: var(--fw-bolder) !important;
+  text-transform: capitalize;
+}
+
+h4 {
+  font-size: 2.5rem !important;
+  font-weight: var(--fw-bolder) !important;
+  text-transform: capitalize;
+}
+
+h5 {
+  font-size: 2rem !important;
+  font-weight: var(--fw-bolder) !important;
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 1.6rem;
+  font-family: var(--secondary-font);
+  font-weight: var(--fw-light);
+}
+
+.text-green {
+  color: var(--green);
+}
+
+.padding-top {
+  padding-top: 5rem;
+}
+.padding-bottom {
+  padding-bottom: 5rem;
+}
+
+.margin-top {
+  margin-top: 5rem;
+}
+
+.section-padding {
+  padding-block: 10rem;
+}
+
+.font-primary {
+  font-family: var(--primary-font);
+}
+
+.font-secondary {
+  font-family: var(--secondary-font);
+}
+
+.font-heading {
+  font-family: var(--heading-font);
+}
+
+.top-icon {
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  opacity: 0.8;
+  font-size: 1.8rem;
+  color: var(--white);
+  background-color: var(--blue);
+  border: 0.2rem solid transparent;
+  filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 193, 231, 0.5));
+  transition: var(--transition);
+}
+
+.top-icon:hover,
+.top-icon:focus {
+  opacity: 1;
+  color: var(--white);
+  border-color: var(--blue);
+  background-color: transparent;
+}
+
+.animateIcon {
+  visibility: visible;
+  animation: iconAnimation 0.5s linear;
+}
+
+@keyframes iconAnimation {
+  0% {
+    transform: translateY(10rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+.icon-animation {
+  animation: icon 1s linear infinite alternate-reverse;
+}
+
+@keyframes icon {
+  0% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+/* BUTTONS SECTION */
+.btn-primary,
+.btn-secondary {
+  padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+  border-radius: 0.2rem;
+  border: none;
+  text-transform: capitalize;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+  transition: var(--transition);
+}
+
+/* ---------------********** NAVBAR SECTION START **********------------------------ */
+.navbar {
+  width: 100%;
+  height: 6.5rem;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.512);
+  backdrop-filter: blur(1rem);
+}
+
+.nav-scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 193, 231, 0.631372549);
+  backdrop-filter: blur(1rem);
+  transition: var(--transition);
+  animation: scroll 0.5s ease-in;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(-90px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.navbar-brand h3 {
+  font-family: var(--secondary-font) !important;
+  color: rgba(0, 0, 0, 0.672);
+  font-weight: bold !important;
+  text-transform: lowercase !important;
+  font-size: 3.5rem !important;
+}
+
+.nav-item {
+  padding-inline: 1rem;
+}
+
+.nav-item .nav-link {
+  display: inline-block;
+  color: rgb(59, 58, 58);
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  position: relative;
+  padding-bottom: 1rem;
+  font-family: var(--primary-font);
+  transition: var(--transition);
+}
+
+.nav-item .nav-link:hover,
+.nav-item .nav-link:focus {
+  color: var(--green);
+}
+
+.nav-num {
+  color: rgb(59, 58, 58);
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  position: relative;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  font-family: var(--primary-font);
+  transition: var(--transition);
+}
+
+/* ---------------********** HERO SECTION START **********------------------------ */
+.hero_section {
+  width: 100%;
+  height: 80vh;
+}
+
+/* .hero_content {
+  padding-left: 8rem;
+} */
+
+.hero_btn {
+  margin-block: 3rem;
+}
+
+.hero_btn button {
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  border: none;
+  font-family: var(--secondary-font);
+  font-weight: light;
+  color: var(--white);
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: var(--transition);
+}
+
+.hero_btn button:hover ,
+.hero_btn button:focus {
+  color: var(--white);
+  background-color: rgb(45, 45, 45);
+}
+
+.hero_main_btn {
+  width: 100%;
+  max-width: 20rem;
+  height: 4.5rem;
+  display: flex ;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  border-radius: 4rem;
+  border: none;
+  color: var(--black);
+  font-weight: 500;
+  padding-inline: 1rem;
+}
+
+.hero_main_btn span {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border-radius: 2rem;
+  color: var(--black);
+  background-color: var(--green);
+  transition: var(--transition);
+}
+
+.hero_main_btn:hover span {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.small_text {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: light;
+}
+
+.hero_img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ---------------********** HERO SECTION START **********------------------------ */
+/* ---------------********** HERO SECTION START **********------------------------ */
+/* ---------------********** HERO SECTION START **********------------------------ */
+/* ---------------********** FOOTER SECTION START **********------------------------ */
+.footer_section {
+  width: 100%;
+  padding-top: 4rem;
+  background-color: rgb(45, 45, 45);
+}
+
+.footer_logo h2 {
+  font-size: 3rem !important;
+  font-weight: 500 !important;
+  width: 12rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--secondary-font);
+  text-transform: lowercase !important;
+  background-color: rgba(255, 255, 255, 0.074);
+}
+
+.footer_input .form-control {
+  max-width: 30rem;
+  height: 4rem;
+  border: none;
+  border-radius: 2rem;
+  padding-left: 2rem;
+  font-size: 1.4rem;
+  color: var(--black);
+}
+
+.footer_input .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.footer_input button {
+  width: 100%;
+  max-width: 11.5rem;
+  height: 4rem;
+  font-size: 1.4rem;
+  border-radius: 2rem;
+  padding-left: 0.5rem;
+  border: none;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.footer_input button i {
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  margin-left: 1rem;
+  border-radius: 2rem;
+  color: var(--black);
+  background-color: var(--green);
+  transition: var(--transition);
+}
+
+.footer_input button:hover i {
+  color: var(--white);
+  background-color: var(--white);
+}
+
+.footer_link {
+  margin-top: 5rem;
+}
+
+.border-right {
+  border-right: 0.1rem solid rgba(255, 255, 255, 0.074);
+}
+
+.border-right ul:first-child {
+  padding-left: none !important;
+}
+
+.border-right ul {
+  padding-left: 1.5rem;
+}
+
+.footer_item a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: var(--white);
+  font-family: var(--primary-font);
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  transition: var(--transition);
+}
+
+.footer_item a:hover,
+.footer_item a:focus {
+  color: var(--green);
+}
+
+.footer_icon i {
+  font-size: 1.6rem;
+  color: var(--white);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.footer_icon i:hover {
+  color: var(--green);
+}
+
+.subfooter_content p {
+  color: var(--white);
+  font-size: 1.4rem;
+  line-height: none;
+  font-weight: light;
+  font-family: var(--primary-font);
+}
