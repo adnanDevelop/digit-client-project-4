@@ -474,19 +474,19 @@ p {
   z-index: 1;
 }
 
-.review_card::after {
+/* .review_card::after {
   content: "";
   position: absolute;
   bottom: -3rem;
   left: 2rem;
   transform: rotate(5deg);
-  /* border: 2rem solid black; */
+  border: 2rem solid black;
   border-top: 2rem solid white;
   border-right: 2rem solid transparent;
   border-bottom: 2rem solid transparent;
   border-left: 2rem solid white;
   z-index: -1;
-}
+} */
 
 .review_content {
   font-size: 1.4rem;
