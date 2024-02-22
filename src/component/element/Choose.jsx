@@ -65,7 +65,7 @@ const Choose = () => {
                       <h5 className="choose_title font-primary">
                         {element.title}
                       </h5>
-                      <p className="choose_content">{element.content}</p>
+                      <p className="choose_content mb-0">{element.content}</p>
                     </div>
                   </div>
                 </div>

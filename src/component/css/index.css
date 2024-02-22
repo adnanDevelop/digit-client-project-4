@@ -518,7 +518,7 @@ p {
 }
 
 .team_padding {
-  padding-block: 5rem !important;
+  padding: 8rem 0 5rem 0;
 }
 
 .team_content .content {
@@ -548,18 +548,106 @@ p {
 }
 
 .team_card img {
-  width: 15rem ;
+  width: 15rem;
   height: 15rem;
   object-fit: cover;
   margin-bottom: 1rem;
 }
 
 .team_body h5 {
-font-size: 1.8rem !important;
+  font-size: 1.8rem !important;
 }
 
 .team_body p {
   font-size: 1.4rem;
+}
+
+/* ---------------********** FAQ SECTION START **********------------------------ */
+
+.faq_header a {
+  font-size: 1.5rem !important;
+  color: gray;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.faq_header a:hover {
+  color: var(--green);
+}
+
+.faq_tab button {
+  padding: 0.8rem 1.5rem !important;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.09);
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.542);
+  font-size: 1.4rem;
+  font-weight: 400;
+  transition: var(--transition);
+}
+
+.faq_tab button.active {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.6);
+}
+
+.accordion-button {
+  padding: 1.5rem !important;
+  font-size: 1.6rem !important;
+  font-family: var(--secondary-font);
+  background-color: transparent !important;
+  color: var(--black) !important;
+  font-weight: 500 !important;
+  border-bottom: transparent !important;
+  border-radius: 0.5rem 0.5rem 0 0 !important ;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-body {
+  padding: 1.5rem !important;
+  font-size: 1.4rem !important;
+  text-align: justify;
+  text-align-last: left;
+}
+
+.accordion-item {
+  border-bottom-left-radius: 0.5rem !important ;
+  border-bottom-right-radius: 0.5rem !important ;
+}
+
+.detail_section p {
+  font-size: 1.4rem;
+}
+
+.detail_card {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.09);
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.542);
+}
+
+.detail_card i {
+  font-size: 2rem;
+}
+
+.detail_card h5 {
+  color: var(--black) !important;
+  font-size: 1.6rem !important;
+  font-weight: 600 !important;
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+}
+
+.detail_card a {
+  color: gray ;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin-top: 0rem;
 }
 
 /* ---------------********** FOOTER SECTION START **********------------------------ */

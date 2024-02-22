@@ -55,7 +55,7 @@ const Testmonial = () => {
             >
               What People say about our quote?
             </h2>
-            <div className="review_star d-flex align-items-center justify-content-center gap-2">
+            <div className="review_star d-flex align-items-center justify-content-center flex-wrap gap-2">
               <div className="d-flex gap-2">
                 <span className="star">
                   <IoMdStar />

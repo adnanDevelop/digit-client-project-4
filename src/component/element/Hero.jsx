@@ -9,7 +9,7 @@ const Hero = () => {
             <div className="hero_content py-lg-2 py-5">
               <h1>Canada deserves more</h1>
               <h2 className="font-primary">More Saings, More Happiness</h2>
-              <div className="hero_btn d-flex align-items-center gap-3">
+              <div className="hero_btn d-flex align-items-center flex-wrap gap-3">
                 <button type="button">Car Quote</button>
                 <button type="button">Home Quote</button>
                 <button type="button">Bundle to Save</button>

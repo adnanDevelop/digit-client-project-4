@@ -15,8 +15,8 @@ const Navbar = () => {
         scrollAnimation ? "nav-scroll" : ""
       }`}
     >
-      <div className="container d-flex align-item-center px-sm-2 px-4">
-        <a className="navbar-brand order-0" href="#">
+      <div className="container-fluid d-flex align-item-center px-md-5 px-4">
+        <a className="navbar-brand order-0" href="#home">
           <h3 className="fw-bold">digit</h3>
           {/* <img src="Images/logo.png" alt="" /> */}
         </a>

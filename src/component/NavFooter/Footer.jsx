@@ -29,26 +29,26 @@ const Footer = () => {
                 <div className="row">
                   <div className="col-sm-4 col-6 border-right">
                     <ul className="list-unstyled">
-                      <li className="footer_item"><a href="#">Board of Directors</a></li>
-                      <li className="footer_item"><a href="#">Leadership team</a></li>
-                      <li className="footer_item"><a href="#">Careers</a></li>
-                      <li className="footer_item"><a href="#">About us</a></li>
+                      <li className="footer_item"><a href="#home">Board of Directors</a></li>
+                      <li className="footer_item"><a href="#home">Leadership team</a></li>
+                      <li className="footer_item"><a href="#home">Careers</a></li>
+                      <li className="footer_item"><a href="#home">About us</a></li>
                     </ul>
                   </div>
                   <div className="col-sm-4 col-6 border-right ">
                      <ul className="list-unstyled">
-                      <li className="footer_item"><a href="#">Contact us</a></li>
-                      <li className="footer_item"><a href="#">FAQs</a></li>
-                      <li className="footer_item"><a href="#">News</a></li>
-                      <li className="footer_item"><a href="#">Refer a friend</a></li>
+                      <li className="footer_item"><a href="#home">Contact us</a></li>
+                      <li className="footer_item"><a href="#home">FAQs</a></li>
+                      <li className="footer_item"><a href="#home">News</a></li>
+                      <li className="footer_item"><a href="#home">Refer a friend</a></li>
                     </ul>
                   </div>
                   <div className="col-sm-4  mt-sm-0 mt-4 border-right ">
                      <ul className="list-unstyled">
-                      <li className="footer_item"><a href="#">Privacy policy</a></li>
-                      <li className="footer_item"><a href="#">Legal</a></li>
-                      <li className="footer_item"><a href="#">Accessibility</a></li>
-                      <li className="footer_item"><a href="#">Sitemap</a></li>
+                      <li className="footer_item"><a href="#home">Privacy policy</a></li>
+                      <li className="footer_item"><a href="#home">Legal</a></li>
+                      <li className="footer_item"><a href="#home">Accessibility</a></li>
+                      <li className="footer_item"><a href="#home">Sitemap</a></li>
                     </ul>
                   </div>
                 </div>

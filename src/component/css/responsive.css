@@ -58,7 +58,20 @@
 
   /* HERO SECTION */
   .hero_content {
-    padding-left: 12rem;
+    padding-left: 4rem;
+  }
+
+  .hero_btn button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  .hero_btn {
+    margin-block: 1.8rem;
+  }
+
+  .hero_content h2 {
+    font-size: 1.8rem !important;
   }
 
 
@@ -109,16 +122,20 @@
   .team_padding {
     padding-block: 4rem !important;
   }
+
+  .team_padding {
+    padding: 4rem  0 4rem 0;
+  }
   
 
 }
 /* MAX-WIDTH 568PX */
 @media (max-width: 568px) {
   /* CUSTOM CSS */
-
-  h2 {
-    font-size: 2.2rem !important;
+  h1 {
+    font-size: 2.8rem !important;
   }
+
   h4 {
     font-size: 1.8rem !important;
   }
@@ -143,9 +160,29 @@
     font-size: 1.5rem;
   }
 
+  /* HERO SECTION */
+  .hero_content {
+    padding-left: 1rem;
+  }
+
+  .hero_btn button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1.3rem;
+  }
+
+  .hero_main_btn {
+    font-size: 1.3rem;
+  }
+
   /* COMPANY SECTION */
   .company_img img {
     max-width: 12rem;
+  }
+
+  /* CHOOSE SECTION */
+  .choose_title {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem !important;
   }
 
   /* FOOTER SECTION */
@@ -170,6 +207,11 @@
   .swiper_card {
     margin-bottom: 6rem;
   } 
+
+  /* FAQ SECTION */
+  .accordion-button {
+    font-size: 1.3rem !important;
+  }
 
 }
 /* MAX-WIDTH 420px */
