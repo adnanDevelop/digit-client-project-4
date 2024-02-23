@@ -112,7 +112,7 @@ p {
 }
 
 .padding-block {
-  padding-block: 8rem;
+  padding-block: 10rem;
 }
 
 .font-primary {
@@ -184,25 +184,155 @@ p {
 }
 
 /* BUTTONS SECTION */
-.btn-primary,
+.btn-primary {
+  padding: 1rem 2.5rem !important;
+  border-radius: 2rem !important;
+  border: 0.1rem solid var(--black) !important;
+  color: var(--black) !important;
+  background-color: transparent !important;
+  font-size: 1.4rem !important;
+  font-weight: 600 !important;
+  transition: var(--transition) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--black) !important;
+  color: var(--white) !important;
+}
+
 .btn-secondary {
-  padding: 1rem 2.5rem;
-  font-size: 1.5rem;
-  border-radius: 0.2rem;
-  border: none;
-  text-transform: capitalize;
-  font-weight: 500;
-  position: relative;
-  z-index: 1;
-  transition: var(--transition);
+  padding: 1rem 2.5rem !important;
+  border-radius: 2rem !important;
+  border: 0.1rem solid transparent !important;
+  color: var(--white) !important;
+  background-color: var(--green) !important;
+  font-size: 1.4rem !important;
+  font-weight: 600 !important;
+  transition: var(--transition) !important;
+}
+
+.btn-secondary:hover {
+  color: var(--white) !important;
+  background-color: var(--black) !important;
 }
 
 /* ---------------********** NAVBAR SECTION START **********------------------------ */
+nav {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  box-shadow:  0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav_icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav_icon .fa-xmark {
+  font-size: 1.8rem;
+  transition: var(--transition);
+}
+
+.nav_icon .fa-xmark:hover,
+.nav_icon .fa-xmark:focus {
+  transform: rotate(360deg);
+}
+
+.nav_body {
+  width: 100%;
+  height: auto;
+  padding: 2.5rem;
+  background-color: var(--white);
+  position: absolute;
+  top: -1000%;
+  opacity: 0;
+  left: 0;
+  z-index: -1;
+  transition: var(--transition);
+}
+
+.nav_body.active {
+  top: 100% !important;
+  z-index: -10;
+  opacity: 1;
+}
+
+.nav_items {
+  border-right: 0.15rem solid gray;
+  padding-right: 2rem;
+}
+
+.nav_items li {
+  padding-block: 1rem;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.nav_items li:hover {
+  border-bottom-color: var(--green);
+}
+
+.nav_items li:hover a {
+  color: var(--green);
+}
+
+.nav_items li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: gray;
+  transition: var(--transition);
+}
+
+.nav_items li a:hover,
+.nav_items li a:focus {
+  color: var(--green);
+}
+
+.nav_content h5 {
+  font-size: 1.6rem !important;
+}
+
+.nav_card {
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+}
+
+.nav_card_body {
+  padding: 1.4rem;
+}
+
+.nav_card_body h5 {
+  font-size: 1.8rem !important;
+}
+
+.nav_card_body p {
+  font-size: 1.4rem ;
+  color: gray;
+}
+
+.nav_card_body a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: gray;
+  transition: var(--transition);
+}
+
+.nav_card_body a:hover {
+  color: var(--green);
+}
+
 .navbar {
   width: 100%;
   height: 6.5rem;
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.512);
   backdrop-filter: blur(1rem);
+  z-index: 100;
 }
 
 .nav-scroll {
@@ -270,7 +400,7 @@ p {
 /* ---------------********** HERO SECTION START **********------------------------ */
 .hero_section {
   width: 100%;
-  /* height: 80vh; */
+  height: 100vh;
 }
 
 .hero_content {
@@ -334,6 +464,12 @@ p {
   margin-top: 0.5rem;
   font-size: 1.2rem;
   font-weight: light;
+}
+
+.hero_img img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
 }
 
 /* ---------------********** COMPANY SECTION START **********------------------------ */
@@ -420,7 +556,7 @@ p {
 /* ---------------********** TESTMONIAL SECTION START **********------------------------ */
 .testmonial_section {
   background-color: rgba(0, 0, 0, 0.068);
-  padding-block: 5rem;
+  padding-block: 8rem;
 }
 
 .star {
@@ -531,22 +667,6 @@ p {
   font-size: 1.2rem;
 }
 
-.btn-secondary {
-  padding: 1rem 2.5rem !important;
-  border-radius: 2rem !important;
-  border: none !important;
-  color: var(--white) !important;
-  background-color: var(--green) !important;
-  font-size: 1.4rem !important;
-  font-weight: 600 !important;
-  transition: var(--transition) !important;
-}
-
-.btn-secondary:hover {
-  color: var(--white) !important;
-  background-color: var(--black) !important;
-}
-
 .team_card img {
   width: 15rem;
   height: 15rem;
@@ -643,7 +763,7 @@ p {
 }
 
 .detail_card a {
-  color: gray ;
+  color: gray;
   font-weight: 400;
   text-decoration: none;
   font-size: 1.4rem;

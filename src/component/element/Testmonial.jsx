@@ -45,7 +45,7 @@ const Testmonial = () => {
   ];
 
   return (
-    <div className="testmonial_section ">
+    <div className="testmonial_section">
       <div className="container px-sm-2 px-4">
         <div className="row 4">
           <div className="choose_header position-relative text-center">

@@ -22,15 +22,16 @@
   }
 
   .navbar-collapse {
-    margin-top: 0.7rem;
+    margin-top: 0rem;
     padding: 2rem;
     border-bottom: 0.1rem solid var(--blue);
     border-radius: 0 0 1rem 1rem;
     text-align: left;
     z-index: 10;
-    background-color: var(--white);
+    background-color: var(--white) !important;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     border-bottom: 0.2rem solid rgba(0, 0, 0, 0.4);
+    z-index: 100;
   }
   .navbar-toggler {
     border: none !important;
@@ -55,8 +56,12 @@
     color: var(--green);
   }
 
-
   /* HERO SECTION */
+  .hero_section {
+    width: 100%;
+    height: auto;
+  }
+
   .hero_content {
     padding-left: 4rem;
   }
@@ -74,6 +79,9 @@
     font-size: 1.8rem !important;
   }
 
+  .hero_img img {
+    height: auto;
+  }
 
   /* CHOOSE SECTION */
   .choose_shape {
@@ -108,6 +116,12 @@
     padding-block: 4.5rem;
   }
 
+  /* NAVBAR SECTION */
+  .nav_items {
+    border: none;
+    padding-right: 0rem;
+  }
+
   /* INSURANCE SECTION */
   .insurance_card {
     height: 30rem;
@@ -124,10 +138,8 @@
   }
 
   .team_padding {
-    padding: 4rem  0 4rem 0;
+    padding: 4rem 0 4rem 0;
   }
-  
-
 }
 /* MAX-WIDTH 568PX */
 @media (max-width: 568px) {
@@ -147,7 +159,7 @@
   .navbar-collapse {
     padding: 1rem;
     text-align: center;
-    margin-top: 1.4rem;
+    margin-top: 0.4rem;
   }
 
   .navbar-brand h3 {
@@ -206,13 +218,12 @@
   /* TESTMONIAL SECTION */
   .swiper_card {
     margin-bottom: 6rem;
-  } 
+  }
 
   /* FAQ SECTION */
   .accordion-button {
     font-size: 1.3rem !important;
   }
-
 }
 /* MAX-WIDTH 420px */
 @media (max-width: 420px) {

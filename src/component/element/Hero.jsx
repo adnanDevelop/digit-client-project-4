@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="container-fluid">
         <div className="row d-flex align-items-center">
           <div className="col-lg-7 col-xl-6">
-            <div className="hero_content py-lg-2 py-5">
+            <div className="hero_content py-lg-2 py-5 d-flex align-items-start justify-content-center flex-column ">
               <h1>Canada deserves more</h1>
               <h2 className="font-primary">More Saings, More Happiness</h2>
               <div className="hero_btn d-flex align-items-center flex-wrap gap-3">
@@ -25,7 +25,7 @@ const Hero = () => {
           </div>
           <div className="col-lg-5 col-xl-6 px-0">
             <div className="hero_img">
-                <img src="/image/hero-img.avif" className="img-fluid"  alt="" />
+                <img src="/image/hero-img-2.avif"  alt="" />
             </div>
           </div>
         </div>
