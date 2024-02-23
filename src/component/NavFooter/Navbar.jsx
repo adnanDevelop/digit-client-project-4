@@ -4,7 +4,7 @@ const Navbar = () => {
   const [activeNav, setActiveNav] = useState(false);
   return (
     <nav className="position-relative bg-white position-sticky top-0 left-0">
-      <div className={`nav_body shadow-sm ${activeNav ? "active" : " "}`}>
+      <div className={`nav_body ${activeNav ? "active" : " "}`}>
         <div className="container">
           <div className="row d-flex align-items-center">
             <div className="col-lg-3 col-md-4 col-sm-6">
