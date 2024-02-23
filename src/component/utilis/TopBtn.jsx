@@ -1,27 +1,16 @@
-import React , {useState} from "react";
+import React from "react";
+import { FiMessageCircle } from "react-icons/fi";
 
 const TopBtn = () => {
-    const [iconAnimation , setIconAnimation] = useState(false);
-    window.addEventListener('scroll' , () => {
-        (window.scrollY > 100) ? setIconAnimation(true) : setIconAnimation(false);
-    })
-
-    const topBar = () => {
-      window.scrollTo({
-        top : 0,
-        behavior : 'smooth',
-      })
-    }
-
+    
   return (
     <div
-      className={`top-icon ${iconAnimation ? "animateIcon" : ""}`}
-      onClick={topBar}
+      className={`top-icon`}
     >
-      <span className="icon-animation">
-        {/* <FaAngleUp/> */}
-        <i className="fa-solid fa-arrow-up"></i>
+      <span className="icon-animation pe-2">
+      <FiMessageCircle />
       </span>
+      Chat
     </div>
   );
 };

@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import Navbar from "./component/NavFooter/Navbar";
 import Footer from "./component/NavFooter/Footer";
 import Main from "./component/pages/Main";
+import TopBtn from "./component/utilis/TopBtn";
 
 function App() {
   useEffect(() => {
@@ -17,6 +18,7 @@ function App() {
       <Navbar />
       <Main />
       <Footer />
+      <TopBtn />
     </div>
   );
 }
