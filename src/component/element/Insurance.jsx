@@ -25,7 +25,7 @@ const Insurance = () => {
   ];
 
   return (
-    <div className="insurance_section padding-block">
+    <div className="insurance_section">
       <div className="container-fluid px-md-5 px-4">
         <div className="row">
           <div className="insurance_header text-center">
@@ -34,11 +34,11 @@ const Insurance = () => {
             </h2>
           </div>
         </div>
-        <div className="choose_card_section">
-          <div className="row g-lg-5 g-4">
+        <div className="insurance_card_section">
+          <div className="row g-4">
             {insuranceContent.map((element, index) => {
               return (
-                <div className="col-lg-3 col-md-4 col-sm-6 mb-lg-5 mb-lg-4" key={index}>
+                <div className=" col-lg-3 col-md-4 col-sm-6 mb-lg-5 mb-lg-4" key={index}>
                   <div className="insurance_card">
                     <p className="insurance_icon"></p>
                     <div className="insurance_body">

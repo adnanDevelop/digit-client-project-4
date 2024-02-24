@@ -2,7 +2,7 @@ import React from 'react'
 
 const Company = () => {
   return (
-    <div className='company_section padding-block'>
+    <div className='company_section'>
         <div className="container px-2 px-4">
             <div className="row g-4 d-flex align-items-center justify-content-center">
                 <div className="col-lg-2 col-md-3 col-6">

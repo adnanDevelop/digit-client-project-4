@@ -4,9 +4,9 @@ const Hero = () => {
   return (
     <div className="hero_section">
       <div className="container-fluid">
-        <div className="row d-flex align-items-center">
-          <div className="col-lg-7 col-xl-6">
-            <div className="hero_content py-lg-2 py-5 d-flex align-items-start justify-content-center flex-column ">
+        <div className="row d-lg-flex align-items-center justify-content-center">
+          <div className="col-lg-6 px-0">
+            <div className="hero_content ">
               <h1>Canada deserves more</h1>
               <h2 className="font-primary">More Saings, More Happiness</h2>
               <div className="hero_btn d-flex align-items-center flex-wrap gap-3">
@@ -23,9 +23,9 @@ const Hero = () => {
               <p className="small_text">Save upto 35% on your premium</p>
             </div>
           </div>
-          <div className="col-lg-5 col-xl-6 px-0">
-            <div className="hero_img">
-                <img src="/image/hero-img-2.avif"  alt="" />
+          <div className="col-lg-6 px-0">
+            <div className="hero_img d-flex justify-content-end">
+              <img src="/image/hero-img.avif" alt="" />
             </div>
           </div>
         </div>

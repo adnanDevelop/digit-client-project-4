@@ -91,6 +91,7 @@ const Testmonial = () => {
               spaceBetween={40}
               navigation={true}
               pagination={true}
+              loop={true}
               grabCursor={true}
               breakpoints={{
                 320: {

@@ -1,9 +1,66 @@
-import React, { useState } from "react";
+import React  from "react";
 
 const Navbar = () => {
-  const [activeNav, setActiveNav] = useState(false);
+  // const [activeNav, setActiveNav] = useState(false);
+
   return (
-    <nav className="position-relative bg-white position-sticky top-0 left-0">
+    <nav
+    id="navbar-section"
+    className={`navbar navbar-expand-lg`}
+  >
+    <div className="container d-flex align-item-center px-sm-2 px-4">
+      <a className="navbar-brand order-0" href="#home">
+        <h3 className="fw-bold">digit</h3>
+      </a>
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i className="fa-solid fa-bars-staggered "></i>
+      </button>
+      <div
+        className="collapse navbar-collapse order-2"
+        id="navbarSupportedContent"
+      >
+        <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li className="nav-item">
+            <a className="nav-link" aria-current="page" href="#product">
+              Product
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link " aria-current="page" href="#policy">
+              Preview Policy
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link " aria-current="page" href="#claim">
+             Claims
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link " aria-current="page" href="#help">
+              Help Center
+            </a>
+          </li>
+        </ul>
+        <div className="d-lg-block d-none">
+        <p className="mb-0 nav-num" >90645665</p>
+      </div>
+      </div>
+    </div>
+  </nav>
+  );
+};
+
+{/*
+
+ <nav className="position-relative bg-white position-sticky top-0 left-0">
       <div className={`nav_body ${activeNav ? "active" : " "}`}>
         <div className="container">
           <div className="row d-flex align-items-center">
@@ -119,12 +176,10 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  );
-};
 
-{
-  /*
+*/}
 
+{/*
  <nav
       id="navbar-section"
       className={`navbar navbar-expand-lg ${

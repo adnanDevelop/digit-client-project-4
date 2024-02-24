@@ -1,11 +1,32 @@
-/* MAX-WIDTH 992PX */
-@media (max-width: 1280px) {
+@media (max-width: 1400px) {
+  .hero_section {
+    width: 100%;
+  }
+
   .hero_content {
-    padding-left: 5rem;
+    width: 100%;
+    max-width: 510px;
+    margin-inline: auto;
+  }
+}
+@media (max-width: 1200px) {
+  /* CUSTOM CSS */
+  h1 {
+    font-size: 3.5rem !important;
+  }
+
+  .hero_content {
+    width: 100%;
+    max-width: 360px;
+    margin-inline: auto;
   }
 }
 
 @media (max-width: 992px) {
+  .padding-block {
+    padding-block: 8rem;
+  }
+
   /* NAVBAR SECTION START  */
   .navbar {
     height: 6.5rem;
@@ -22,7 +43,7 @@
   }
 
   .navbar-collapse {
-    margin-top: 0rem;
+    margin-top: 0.8rem;
     padding: 2rem;
     border-bottom: 0.1rem solid var(--blue);
     border-radius: 0 0 1rem 1rem;
@@ -56,14 +77,11 @@
     color: var(--green);
   }
 
-  /* HERO SECTION */
-  .hero_section {
-    width: 100%;
-    height: auto;
-  }
-
   .hero_content {
-    padding-left: 4rem;
+    width: 100%;
+    max-width: 720px;
+    margin-inline: auto;
+    padding-block: 2rem;
   }
 
   .hero_btn button {
@@ -79,21 +97,47 @@
     font-size: 1.8rem !important;
   }
 
-  .hero_img img {
-    height: auto;
-  }
-
   /* CHOOSE SECTION */
   .choose_shape {
     display: none;
   }
 
-  .choose_card_section {
-    margin-top: 5rem;
+  /* COMPANY SECTION */
+  .company_section {
+    width: 100%;
+    height: auto;
+    padding: 5rem 0 3rem 0;
   }
+
+  .insurance_section , 
+  .choose_section ,
+  .testmonial_section {
+    height: auto;
+    padding-block: 9rem;
+  }
+
+  /* TEAM SECTION */
+  .team_section {
+    padding-block: 5rem; 
+  }
+
+  .team_card img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .team_padding {
+    padding: 4.5rem 0 4.5rem 0;
+  }
+
+  /* INSURANCE SECTION */
+  .insurance_card {
+    height: 30rem;
+  }
+
 }
 /* MAX-WIDTH 772PX */
-@media (max-width: 772px) {
+@media (max-width: 768px) {
   /* CUSTOM CSS */
   h1 {
     font-size: 3rem !important;
@@ -112,8 +156,8 @@
     font-size: 1.5rem;
   }
 
-  .section-padding {
-    padding-block: 4.5rem;
+  .padding-block {
+    padding-block: 5rem;
   }
 
   /* NAVBAR SECTION */
@@ -122,27 +166,28 @@
     padding-right: 0rem;
   }
 
-  /* INSURANCE SECTION */
-  .insurance_card {
-    height: 30rem;
+  /* HERO SECTION */
+  .hero_content {
+    width: 100%;
+    max-width: 520px;
+    margin-inline: auto;
+    padding-block: 2rem;
+  }
+
+  .insurance_section , 
+  .choose_section ,
+  .testmonial_section {
+    height: auto;
+   padding-block: 6rem;
   }
 
   /* TEAM SECTION */
-  .team_card img {
-    width: 12rem;
-    height: 12rem;
-  }
-
-  .team_padding {
-    padding-block: 4rem !important;
-  }
-
   .team_padding {
     padding: 4rem 0 4rem 0;
   }
 }
 /* MAX-WIDTH 568PX */
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   /* CUSTOM CSS */
   h1 {
     font-size: 2.8rem !important;
@@ -159,7 +204,7 @@
   .navbar-collapse {
     padding: 1rem;
     text-align: center;
-    margin-top: 0.4rem;
+    margin-top: 1rem;
   }
 
   .navbar-brand h3 {
@@ -174,7 +219,9 @@
 
   /* HERO SECTION */
   .hero_content {
-    padding-left: 1rem;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 1.5rem !important ;
   }
 
   .hero_btn button {
@@ -188,18 +235,17 @@
 
   /* COMPANY SECTION */
   .company_img img {
-    max-width: 12rem;
+    max-width: 10rem;
+  }
+
+  .company_section {
+    padding: 3rem 0 3rem 0;
   }
 
   /* CHOOSE SECTION */
   .choose_title {
     margin-bottom: 0.5rem;
     font-size: 1.8rem !important;
-  }
-
-  /* FOOTER SECTION */
-  .subfooter_content p {
-    font-size: 1.2rem;
   }
 
   .border-right ul {
@@ -224,6 +270,16 @@
   .accordion-button {
     font-size: 1.3rem !important;
   }
+
+  /* FOOTER SECTION */
+  .subfooter_content p {
+    font-size: 1.2rem;
+  }
+
+  .footer_section {
+    padding: 4rem 0 2rem 0;
+  }
+
 }
 /* MAX-WIDTH 420px */
 @media (max-width: 420px) {

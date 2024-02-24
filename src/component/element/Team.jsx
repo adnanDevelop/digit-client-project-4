@@ -2,7 +2,7 @@ import React from "react";
 
 const Team = () => {
   return (
-    <div className="team_section padding-block">
+    <div className="team_section d-flex align-items-center justify-content-center">
       <div className="container px-sm-2 px-4">
         <div className=" position-relative">
           <div className="choose_shape"></div>
