@@ -119,7 +119,7 @@ const Article = () => {
   ];
 
   return (
-    <div className="article_section d-flex align-items-center justify-content-center">
+    <div className="article_section" style={{ backgroundColor: "#f8f8f8" }}>
       <div className="container px-sm-2 px-4">
         <div className="row">
           <div className="article_header text-center mb-5 position-relative">
@@ -147,48 +147,50 @@ const Article = () => {
             </button>
           </div>
         </div>
-        <div className="row" style={{ marginTop: "4rem" }}>
-          <Swiper
-            spaceBetween={20}
-            effect={"coverflow"}
-            navigation={true}
-            grabCursor={true}
-            breakpoints={{
-              320: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-              },
-              572: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-              1024: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-              },
-            }}
-            coverflowEffect={{
-              rotate: 50,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: true,
-            }}
-            autoplay={{
-              delay: 4000,
-              disableOnInteraction: false,
-            }}
-            modules={[EffectCoverflow, Navigation, Autoplay]}
-            className="mySwiper"
-          >
-            {articleContent.map((element, index) => {
-              return (
-                <SwiperSlide key={index}>
-                  <div className="article_video">{element.video}</div>
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
+        <div className="article_card_section">
+          <div className="row">
+            <Swiper
+              spaceBetween={20}
+              effect={"coverflow"}
+              navigation={true}
+              grabCursor={true}
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                572: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+              }}
+              coverflowEffect={{
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+              }}
+              autoplay={{
+                delay: 4000,
+                disableOnInteraction: false,
+              }}
+              modules={[EffectCoverflow, Navigation, Autoplay]}
+              className="mySwiper"
+            >
+              {articleContent.map((element, index) => {
+                return (
+                  <SwiperSlide key={index}>
+                    <div className="article_video">{element.video}</div>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          </div>
         </div>
       </div>
     </div>

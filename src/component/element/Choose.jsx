@@ -44,7 +44,7 @@ const Choose = () => {
   ];
 
   return (
-    <div className="choose_section">
+    <div className="choose_section" style={{backgroundColor : '#f0f0f0'}}>
       <div className="container px-sm-2 px-4">
         <div className="row 4">
           <div className="choose_header position-relative text-center">

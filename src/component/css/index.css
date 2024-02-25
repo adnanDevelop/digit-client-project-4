@@ -112,7 +112,7 @@ p {
 }
 
 .padding-block {
-  padding-block: 10rem;
+  padding-block: 8rem;
 }
 
 .font-primary {
@@ -436,18 +436,6 @@ nav {
 }
 
 /* ---------------********** INSURANCE SECTION START **********------------------------ */
-.insurance_section {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.insurance_card_section {
-  margin-top: 4rem;
-}
-
 .insurance_card {
   border: 0.2rem solid rgba(0, 0, 0, 0.664);
   border-radius: 0.8rem;
@@ -489,16 +477,17 @@ nav {
 }
 
 /* ---------------********** WHY CHOOSE US SECTION START **********------------------------ */
-.choose_section {
-  background-color: #f0f0f0;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.choose_section,
+.insurance_section,
+.testmonial_section , 
+.article_section {
+  padding: 10rem 0 10rem 0;
 }
 
-.choose_card_section {
-  margin-top: 4rem;
+.choose_card_section,
+.insurance_card_section , 
+.article_card_section {
+  margin-top: 8rem;
 }
 
 .choose_shape {
@@ -528,12 +517,6 @@ nav {
 }
 
 /* ---------------********** ARTICLE SECTION START **********------------------------ */
-.article_section {
-  width: 100%;
-  padding-block: 10rem;
-  background-color: #f8f8f8;
-}
-
 .article_btn {
   font-size: 1.5rem;
   font-weight: 400;
@@ -596,13 +579,6 @@ nav {
 }
 
 /* ---------------********** TESTMONIAL SECTION START **********------------------------ */
-.testmonial_section {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .star {
   width: 2rem;
   height: 2rem;

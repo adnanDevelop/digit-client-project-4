@@ -173,11 +173,18 @@
     padding-block: 2rem;
   }
 
-  .insurance_section,
+  /* CHOOSE SECTION */
   .choose_section,
-  .testmonial_section {
-    height: auto;
-    padding-block: 6rem;
+  .insurance_section ,
+  .testmonial_section,
+  .article_section {
+    padding: 8rem 0;
+  }
+
+  .choose_card_section,
+  .insurance_card_section , 
+  .article_card_section {
+    margin-top: 8rem 0;
   }
 
   /* ARTICLE SECTION */
@@ -252,6 +259,19 @@
     font-size: 1.8rem !important;
   }
 
+  .choose_section,
+  .insurance_section ,
+  .testmonial_section , 
+  .article_section {
+    padding: 6rem 0;
+  }
+
+  .choose_card_section,
+  .insurance_card_section ,
+  .article_card_section {
+    margin-top: 5rem;
+  }
+
   .border-right ul {
     padding-left: 0rem;
   }
@@ -289,7 +309,4 @@
   .footer_section {
     padding: 4rem 0 2rem 0;
   }
-}
-/* MAX-WIDTH 420px */
-@media (max-width: 420px) {
 }

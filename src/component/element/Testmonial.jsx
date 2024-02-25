@@ -47,8 +47,8 @@ const Testmonial = () => {
   return (
     <div className="testmonial_section">
       <div className="container px-sm-2 px-4">
-        <div className="row 4">
-          <div className="choose_header position-relative text-center">
+        <div className="row">
+          <div className="testmonial_header position-relative text-center">
             <h2
               className="text-capitalize font-primary "
               style={{ fontWeight: "600" }}
@@ -99,7 +99,7 @@ const Testmonial = () => {
                 },
                 572: {
                   slidesPerView: 2,
-                  spaceBetween: 40,
+                  spaceBetween: 20,
                 },
                 1024: {
                   slidesPerView: 3,
