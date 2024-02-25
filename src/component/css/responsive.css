@@ -109,8 +109,8 @@
     padding: 5rem 0 3rem 0;
   }
 
-  .insurance_section , 
-  .choose_section ,
+  .insurance_section,
+  .choose_section,
   .testmonial_section {
     height: auto;
     padding-block: 9rem;
@@ -118,7 +118,7 @@
 
   /* TEAM SECTION */
   .team_section {
-    padding-block: 5rem; 
+    padding-block: 5rem;
   }
 
   .team_card img {
@@ -134,7 +134,6 @@
   .insurance_card {
     height: 30rem;
   }
-
 }
 /* MAX-WIDTH 772PX */
 @media (max-width: 768px) {
@@ -174,11 +173,16 @@
     padding-block: 2rem;
   }
 
-  .insurance_section , 
-  .choose_section ,
+  .insurance_section,
+  .choose_section,
   .testmonial_section {
     height: auto;
-   padding-block: 6rem;
+    padding-block: 6rem;
+  }
+
+  /* ARTICLE SECTION */
+  .article_section {
+    padding-block: 8rem;
   }
 
   /* TEAM SECTION */
@@ -261,6 +265,12 @@
     height: 26rem;
   }
 
+  /* ARTICLE SECTION */
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+
   /* TESTMONIAL SECTION */
   .swiper_card {
     margin-bottom: 6rem;
@@ -279,7 +289,6 @@
   .footer_section {
     padding: 4rem 0 2rem 0;
   }
-
 }
 /* MAX-WIDTH 420px */
 @media (max-width: 420px) {

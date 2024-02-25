@@ -89,7 +89,6 @@ const Testmonial = () => {
             <Swiper
               slidesPerView={3}
               spaceBetween={40}
-              navigation={true}
               pagination={true}
               loop={true}
               grabCursor={true}

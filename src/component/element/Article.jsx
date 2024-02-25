@@ -2,8 +2,9 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
+import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
-import { Navigation, Autoplay } from "swiper/modules";
+import { EffectCoverflow, Navigation, Autoplay } from "swiper/modules";
 
 const Article = () => {
   const articleContent = [
@@ -146,9 +147,10 @@ const Article = () => {
             </button>
           </div>
         </div>
-        <div className="row" style={{marginTop : "4rem"}}>
+        <div className="row" style={{ marginTop: "4rem" }}>
           <Swiper
             spaceBetween={20}
+            effect={"coverflow"}
             navigation={true}
             grabCursor={true}
             breakpoints={{
@@ -158,26 +160,33 @@ const Article = () => {
               },
               572: {
                 slidesPerView: 2,
-                spaceBetween: 40,
+                spaceBetween: 20,
               },
               1024: {
                 slidesPerView: 3,
                 spaceBetween: 20,
               },
             }}
+            coverflowEffect={{
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true,
+            }}
             autoplay={{
-              delay: 1500,
+              delay: 4000,
               disableOnInteraction: false,
             }}
-            modules={[Navigation, Autoplay]}
+            modules={[EffectCoverflow, Navigation, Autoplay]}
             className="mySwiper"
           >
             {articleContent.map((element, index) => {
-              return <SwiperSlide key={index}>
-                <div className="article_video">
-                    {element.video}
-                </div>
-              </SwiperSlide>;
+              return (
+                <SwiperSlide key={index}>
+                  <div className="article_video">{element.video}</div>
+                </SwiperSlide>
+              );
             })}
           </Swiper>
         </div>
